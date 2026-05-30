@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lemon — web app para gestão de vendas e estoque de limões em caixas.">
+  <title>Lemon | EBDev</title>
+  <link rel="icon" href="../assets/logo-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="logo-link">
+        <img class="logo-full" src="../assets/logo.png" alt="EBDev — Desenvolvimento de Software" height="44">
+        <img class="logo-icon" src="../assets/logo-icon.svg" alt="EBDev" width="40" height="40">
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../acs-visita/">ACS Visita</a></li>
+          <li><a href="index.html">Lemon</a></li>
+          <li><a href="politica-privacidade.html">Privacidade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container legal-page">
+    <span class="badge badge--lemon">Web app</span>
+    <h1>Lemon</h1>
+    <p class="updated">Gestão de Limões · vendas e estoque em caixas</p>
+
+    <h2>O que faz</h2>
+    <p>
+      O Lemon é um sistema web para <strong>vendas</strong> e <strong>gerenciamento de estoque</strong>
+      de limões em caixas: produtos, lotes por colheita, clientes e vendas com porte
+      pequeno, médio ou grande.
+    </p>
+    <ul>
+      <li>Dashboard com estoque total, faturamento do mês e alertas</li>
+      <li>Cadastro de produtos, variedades e preço por caixa</li>
+      <li>Controle de estoque por lote (entradas em caixas)</li>
+      <li>Registro de vendas e relatórios para contabilidade</li>
+      <li>Perfis de acesso: administrador, vendedor, contadora e comprador</li>
+    </ul>
+
+    <h2>Perfis de usuário</h2>
+    <ul>
+      <li><strong>Administrador</strong> — acesso completo, incluindo usuários</li>
+      <li><strong>Vendedor</strong> — vendas e clientes</li>
+      <li><strong>Contadora</strong> — relatórios (leitura)</li>
+      <li><strong>Comprador</strong> — pedidos da própria empresa, produtos e estoque (leitura)</li>
+    </ul>
+
+    <h2>Tecnologia</h2>
+    <p>
+      Next.js, PostgreSQL e hospedagem em nuvem (Firebase App Hosting).
+      Dados de clientes, vendas e estoque ficam no servidor — acesso apenas
+      para usuários autenticados da equipe ou clientes cadastrados.
+    </p>
+
+    <p>
+      <a href="politica-privacidade.html">Leia a Política de Privacidade do Lemon</a>
+    </p>
+
+    <h2>Suporte</h2>
+    <p>
+      Dúvidas sobre o Lemon:<br>
+      <a href="mailto:ericacbonadio@gmail.com">ericacbonadio@gmail.com</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><a href="../index.html">← Voltar para EBDev</a></p>
+    </div>
+  </footer>
+</body>
+</html>

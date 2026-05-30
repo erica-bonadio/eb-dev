@@ -147,6 +147,12 @@ a:hover {
   text-align: left;
 }
 
+.section-title {
+  font-size: 1.25rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
 .badge {
   display: inline-block;
   background: var(--accent-light);
@@ -197,12 +203,11 @@ a:hover {
 .projects-grid {
   display: grid;
   gap: 1.5rem;
+  grid-template-columns: 1fr;
 }
 
-@media (min-width: 640px) {
-  .projects-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+.card--lemon {
+  border-left: 4px solid #84cc16;
 }
 
 .card-emoji {
@@ -213,17 +218,6 @@ a:hover {
   background: rgba(132, 204, 22, 0.14);
   color: #a3e635;
   border-color: rgba(163, 230, 53, 0.35);
-}
-
-.btn--lemon {
-  background: linear-gradient(135deg, #4d7c0f 0%, #84cc16 100%);
-  border-color: rgba(163, 230, 53, 0.35);
-  box-shadow: 0 4px 16px rgba(132, 204, 22, 0.25);
-}
-
-.btn--lemon:hover {
-  background: linear-gradient(135deg, #65a30d 0%, #a3e635 100%);
-  box-shadow: 0 6px 20px rgba(132, 204, 22, 0.35);
 }
 
 .card--lemon h2 {
@@ -263,6 +257,17 @@ a:hover {
   color: #fff !important;
   text-decoration: none;
   box-shadow: 0 6px 20px var(--glow);
+}
+
+.btn.btn--lemon {
+  background: linear-gradient(135deg, #4d7c0f 0%, #84cc16 100%);
+  border-color: rgba(163, 230, 53, 0.35);
+  box-shadow: 0 4px 16px rgba(132, 204, 22, 0.25);
+}
+
+.btn.btn--lemon:hover {
+  background: linear-gradient(135deg, #65a30d 0%, #a3e635 100%);
+  box-shadow: 0 6px 20px rgba(132, 204, 22, 0.35);
 }
 
 .legal-page {

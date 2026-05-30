@@ -1,23 +1,21 @@
 :root {
-  /* Paleta EBDev — navy, ciano e mint (logo) */
-  --brand-navy: #002b49;
-  --brand-navy-mid: #003d66;
-  --brand-cyan: #00c9b7;
-  --brand-cyan-hover: #00b3a3;
-  --brand-teal: #0088aa;
-  --brand-mint: #7af0d1;
-  --brand-mint-light: #e8fbf6;
+  /* Paleta EBDev — azuis do logo { EBDev } */
+  --brand-navy: #0c2d4a;
+  --brand-navy-mid: #1a4975;
+  --brand-blue: #2b6cb0;
+  --brand-blue-hover: #245a94;
+  --brand-sky: #5da9e8;
+  --brand-sky-light: #e8f2fa;
 
-  --bg: #f2f5f8;
+  --bg: #f5f8fb;
   --surface: #ffffff;
   --text: var(--brand-navy);
-  --text-muted: #4d6878;
-  --accent: var(--brand-teal);
-  --accent-hover: #006d88;
+  --text-muted: #5a7189;
+  --accent: var(--brand-blue);
+  --accent-hover: var(--brand-blue-hover);
   --accent-deep: var(--brand-navy);
-  --accent-bright: var(--brand-cyan);
-  --accent-light: var(--brand-mint-light);
-  --border: #d4e4eb;
+  --accent-light: var(--brand-sky-light);
+  --border: #d8e3ed;
   --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -56,20 +54,21 @@ a:hover {
 }
 
 .site-header {
-  background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-mid) 100%);
-  color: #fff;
-  padding: 1rem 0;
-  border-bottom: 3px solid var(--brand-cyan);
+  background: var(--surface);
+  color: var(--brand-navy);
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 8px rgba(12, 45, 74, 0.06);
 }
 
 .site-header a {
-  color: #fff;
+  color: var(--brand-navy-mid);
   text-decoration: none;
   font-weight: 600;
 }
 
 .site-header a:hover {
-  color: var(--brand-mint);
+  color: var(--brand-blue);
   text-decoration: none;
 }
 
@@ -83,15 +82,13 @@ a:hover {
 .logo-link {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  line-height: 0;
 }
 
 .logo-link img {
-  height: 36px;
+  height: 44px;
   width: auto;
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.96);
-  padding: 3px 8px;
+  display: block;
 }
 
 .nav-links {
@@ -102,37 +99,29 @@ a:hover {
   font-size: 0.9rem;
 }
 
-.nav-links a {
-  opacity: 0.92;
-}
-
 .hero {
-  padding: 2.5rem 0 2rem;
+  padding: 2.75rem 0 2rem;
+  text-align: center;
 }
 
-.hero-brand {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  margin-bottom: 1rem;
+.hero .badge {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.hero-brand img {
-  width: min(140px, 35vw);
+.hero-logo {
+  width: min(420px, 92vw);
   height: auto;
-}
-
-.hero h1 {
-  font-size: clamp(1.75rem, 5vw, 2.25rem);
-  line-height: 1.2;
-  margin-bottom: 0.75rem;
-  color: var(--brand-navy);
+  margin: 0 auto 1.5rem;
+  display: block;
 }
 
 .hero .lead {
   color: var(--text-muted);
   font-size: 1.05rem;
   max-width: 55ch;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .badge {
@@ -145,8 +134,8 @@ a:hover {
   letter-spacing: 0.06em;
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
-  margin-bottom: 0.75rem;
-  border: 1px solid rgba(0, 201, 183, 0.35);
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(43, 108, 176, 0.2);
 }
 
 .card {
@@ -180,8 +169,8 @@ a:hover {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.1rem;
-  background: var(--brand-cyan);
-  color: var(--brand-navy) !important;
+  background: linear-gradient(135deg, var(--brand-navy-mid) 0%, var(--brand-blue) 100%);
+  color: #fff !important;
   text-decoration: none;
   border-radius: 6px;
   font-size: 0.9rem;
@@ -189,8 +178,8 @@ a:hover {
 }
 
 .btn:hover {
-  background: var(--brand-mint);
-  color: var(--brand-navy) !important;
+  background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-blue-hover) 100%);
+  color: #fff !important;
   text-decoration: none;
 }
 
@@ -213,7 +202,7 @@ a:hover {
 .legal-page h2 {
   font-size: 1.05rem;
   margin: 1.75rem 0 0.5rem;
-  color: var(--brand-teal);
+  color: var(--brand-blue);
 }
 
 .legal-page p,
@@ -228,7 +217,7 @@ a:hover {
 
 .notice {
   background: var(--accent-light);
-  border-left: 4px solid var(--brand-cyan);
+  border-left: 4px solid var(--brand-sky);
   padding: 1rem 1.1rem;
   border-radius: 0 6px 6px 0;
   margin: 1.5rem 0;
@@ -261,8 +250,18 @@ a:hover {
   border: 0;
 }
 
-.hero-logo {
-  width: min(220px, 70vw);
-  height: auto;
-  margin-bottom: 1.25rem;
+@media (max-width: 520px) {
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .logo-link img {
+    height: 38px;
+  }
+
+  .hero .lead {
+    text-align: center;
+  }
 }

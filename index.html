@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="EBDev — desenvolvimento de apps úteis. ACS Visita: ferramenta de apoio para Agentes Comunitários de Saúde.">
+  <meta name="description" content="EBDev — desenvolvimento de software. ACS Visita e Lemon: apps para saúde e gestão comercial.">
   <title>EBDev | Desenvolvimento de Software</title>
   <link rel="icon" href="assets/logo-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
@@ -18,8 +18,9 @@
       <nav>
         <ul class="nav-links">
           <li><a href="acs-visita.html">ACS Visita</a></li>
-          <li><a href="politica-privacidade.html">Privacidade</a></li>
-          <li><a href="termos-de-uso.html">Termos</a></li>
+          <li><a href="lemon.html">Lemon</a></li>
+          <li><a href="politica-privacidade.html">Privacidade ACS</a></li>
+          <li><a href="termos-de-uso.html">Termos ACS</a></li>
         </ul>
       </nav>
     </div>
@@ -31,12 +32,13 @@
       <h1 class="sr-only">EBDev — Desenvolvimento de Software</h1>
       <img class="hero-logo" src="assets/logo.png" alt="EBDev — Desenvolvimento de Software">
       <p class="lead">
-        Sou Erica Bonadio, desenvolvedora iniciante criando ferramentas móveis
-        focadas em utilidade prática — especialmente para quem trabalha na atenção
-        básica à saúde.
+        Sou Erica Bonadio, desenvolvedora criando ferramentas digitais
+        focadas em utilidade prática — de apps móveis na saúde pública
+        a sistemas web para gestão de negócios.
       </p>
     </section>
 
+    <div class="projects-grid">
     <article class="card">
       <h2>ACS Visita</h2>
       <p>
@@ -49,15 +51,37 @@
         <li>Dados ficam no dispositivo; sem envio automático para servidores</li>
         <li>Backups criptografados (.acs) sob responsabilidade do usuário</li>
       </ul>
-      <a class="btn" href="acs-visita.html">Saiba mais sobre o app</a>
+      <a class="btn" href="acs-visita.html">Saiba mais</a>
     </article>
+
+    <article class="card card--lemon">
+      <h2>Lemon <span class="card-emoji" aria-hidden="true">🍋</span></h2>
+      <p>
+        Web app para vendas e estoque de limões em caixas. Produtos, lotes por colheita,
+        clientes, vendas por porte (pequeno / médio / grande) e relatórios para a equipe.
+      </p>
+      <ul>
+        <li>Perfis: administrador, vendedor, contadora e comprador</li>
+        <li>Dashboard com estoque, faturamento e alertas</li>
+        <li>Next.js + PostgreSQL, hospedado na nuvem</li>
+      </ul>
+      <a class="btn btn--lemon" href="lemon.html">Saiba mais</a>
+    </article>
+    </div>
 
     <article class="card">
       <h2>Documentos legais</h2>
-      <p>Necessários para publicação na Google Play Store e transparência com usuários:</p>
+      <p>Políticas e termos separados por aplicativo:</p>
+
+      <h3 class="legal-app-title">ACS Visita</h3>
       <ul>
         <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
         <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+      </ul>
+
+      <h3 class="legal-app-title">Lemon</h3>
+      <ul>
+        <li><a href="politica-privacidade-lemon.html">Política de Privacidade</a></li>
       </ul>
     </article>
 

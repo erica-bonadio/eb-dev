@@ -194,6 +194,56 @@ a:hover {
   margin-top: 0.35rem;
 }
 
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-emoji {
+  font-size: 0.95em;
+}
+
+.badge--lemon {
+  background: rgba(132, 204, 22, 0.14);
+  color: #a3e635;
+  border-color: rgba(163, 230, 53, 0.35);
+}
+
+.btn--lemon {
+  background: linear-gradient(135deg, #4d7c0f 0%, #84cc16 100%);
+  border-color: rgba(163, 230, 53, 0.35);
+  box-shadow: 0 4px 16px rgba(132, 204, 22, 0.25);
+}
+
+.btn--lemon:hover {
+  background: linear-gradient(135deg, #65a30d 0%, #a3e635 100%);
+  box-shadow: 0 6px 20px rgba(132, 204, 22, 0.35);
+}
+
+.card--lemon h2 {
+  color: var(--text);
+}
+
+.legal-app-title {
+  font-size: 0.95rem;
+  margin: 1.25rem 0 0.5rem;
+  color: var(--accent);
+}
+
+.legal-app-title:first-of-type {
+  margin-top: 0.75rem;
+}
+
+.card h3 {
+  font-size: 0.95rem;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;

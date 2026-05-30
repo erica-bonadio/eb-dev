@@ -104,8 +104,7 @@ a:hover {
 
 .logo-link .logo-full {
   height: 44px;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  filter: drop-shadow(0 2px 8px rgba(93, 169, 232, 0.15));
 }
 
 .logo-link .logo-icon {
@@ -137,8 +136,7 @@ a:hover {
   height: auto;
   margin: 0 auto 1.5rem;
   display: block;
-  border-radius: 12px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  filter: drop-shadow(0 8px 28px rgba(43, 108, 176, 0.25));
 }
 
 .hero .lead {

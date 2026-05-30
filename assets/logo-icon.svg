@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="EBDev">
+  <defs>
+    <linearGradient id="ebdev-grad" x1="8" y1="56" x2="56" y2="8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0c2d4a"/>
+      <stop stop-color="#2b6cb0"/>
+      <stop stop-color="#5da9e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#f5f8fb"/>
+  <!-- chave { -->
+  <path d="M18 14c-4 0-6 2.5-6 6.5 0 3 1.5 5 4 5.5-2.5.5-4 2.5-4 5.5 0 4 2 6.5 6 6.5" stroke="url(#ebdev-grad)" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- moldura / circuito -->
+  <path d="M26 18h18v28H26" stroke="url(#ebdev-grad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="35" cy="18" r="2.2" fill="#2b6cb0"/>
+  <circle cx="35" cy="46" r="2.2" fill="#2b6cb0"/>
+  <path d="M35 20v24" stroke="#2b6cb0" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- seta -->
+  <path d="M44 22l8-6v4h6v8h-4l6 8-8-6" stroke="url(#ebdev-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

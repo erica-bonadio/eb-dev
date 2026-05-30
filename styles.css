@@ -1,21 +1,24 @@
 :root {
-  /* Paleta EBDev — azuis do logo { EBDev } */
+  /* Paleta EBDev — dark tech */
   --brand-navy: #0c2d4a;
   --brand-navy-mid: #1a4975;
   --brand-blue: #2b6cb0;
-  --brand-blue-hover: #245a94;
+  --brand-blue-hover: #3d7ec4;
   --brand-sky: #5da9e8;
-  --brand-sky-light: #e8f2fa;
+  --brand-sky-dim: rgba(93, 169, 232, 0.12);
 
-  --bg: #f5f8fb;
-  --surface: #ffffff;
-  --text: var(--brand-navy);
-  --text-muted: #5a7189;
-  --accent: var(--brand-blue);
-  --accent-hover: var(--brand-blue-hover);
-  --accent-deep: var(--brand-navy);
-  --accent-light: var(--brand-sky-light);
-  --border: #d8e3ed;
+  --bg: #0a1220;
+  --bg-elevated: #0f1a2e;
+  --surface: #132337;
+  --surface-hover: #182a42;
+  --text: #e8eef4;
+  --text-muted: #8fa3bc;
+  --accent: var(--brand-sky);
+  --accent-hover: #7ec0f5;
+  --accent-light: var(--brand-sky-dim);
+  --border: rgba(93, 169, 232, 0.14);
+  --border-strong: rgba(93, 169, 232, 0.28);
+  --glow: rgba(43, 108, 176, 0.35);
   --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -33,9 +36,13 @@ html {
 
 body {
   font-family: var(--font);
-  background: var(--bg);
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(43, 108, 176, 0.18), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(26, 73, 117, 0.12), transparent),
+    var(--bg);
   color: var(--text);
   line-height: 1.65;
+  min-height: 100vh;
 }
 
 a {
@@ -54,21 +61,24 @@ a:hover {
 }
 
 .site-header {
-  background: var(--surface);
-  color: var(--brand-navy);
+  background: rgba(15, 26, 46, 0.85);
+  backdrop-filter: blur(12px);
+  color: var(--text);
   padding: 0.85rem 0;
   border-bottom: 1px solid var(--border);
-  box-shadow: 0 1px 8px rgba(12, 45, 74, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .site-header a {
-  color: var(--brand-navy-mid);
+  color: var(--text-muted);
   text-decoration: none;
   font-weight: 600;
 }
 
 .site-header a:hover {
-  color: var(--brand-blue);
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -94,6 +104,8 @@ a:hover {
 
 .logo-link .logo-full {
   height: 44px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
 }
 
 .logo-link .logo-icon {
@@ -125,6 +137,8 @@ a:hover {
   height: auto;
   margin: 0 auto 1.5rem;
   display: block;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
 }
 
 .hero .lead {
@@ -138,7 +152,7 @@ a:hover {
 .badge {
   display: inline-block;
   background: var(--accent-light);
-  color: var(--brand-navy-mid);
+  color: var(--accent);
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -146,7 +160,7 @@ a:hover {
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
   margin-bottom: 1.25rem;
-  border: 1px solid rgba(43, 108, 176, 0.2);
+  border: 1px solid var(--border-strong);
 }
 
 .card {
@@ -155,12 +169,18 @@ a:hover {
   border-radius: 10px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
 }
 
 .card h2 {
   font-size: 1.15rem;
   margin-bottom: 0.75rem;
-  color: var(--brand-navy);
+  color: var(--text);
 }
 
 .card p,
@@ -186,12 +206,15 @@ a:hover {
   border-radius: 6px;
   font-size: 0.9rem;
   font-weight: 600;
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 4px 16px var(--glow);
 }
 
 .btn:hover {
-  background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-blue-hover) 100%);
+  background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-sky) 100%);
   color: #fff !important;
   text-decoration: none;
+  box-shadow: 0 6px 20px var(--glow);
 }
 
 .legal-page {
@@ -201,7 +224,7 @@ a:hover {
 .legal-page h1 {
   font-size: 1.6rem;
   margin-bottom: 0.35rem;
-  color: var(--brand-navy);
+  color: var(--text);
 }
 
 .legal-page .updated {
@@ -213,7 +236,7 @@ a:hover {
 .legal-page h2 {
   font-size: 1.05rem;
   margin: 1.75rem 0 0.5rem;
-  color: var(--brand-blue);
+  color: var(--accent);
 }
 
 .legal-page p,
@@ -234,6 +257,9 @@ a:hover {
   margin: 1.5rem 0;
   font-size: 0.95rem;
   color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .site-footer {

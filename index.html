@@ -1,23 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>EBDev | Desenvolvimento de Software</title>
-    <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; }
-        h1 { color: #2c3e50; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EBDev — desenvolvimento de apps úteis. ACS Visita: ferramenta de apoio para Agentes Comunitários de Saúde.">
+  <title>EBDev | Desenvolvimento de Software</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>EBDEV</h1>
-    <p>Iniciativa de desenvolvimento de soluções tecnológicas e aplicações móveis focadas em utilidade e eficiência.</p>
-    
-    <h2>Links Úteis</h2>
-    <ul>
-        <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
-    </ul>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html">EBDev</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="acs-visita.html">ACS Visita</a></li>
+          <li><a href="politica-privacidade.html">Privacidade</a></li>
+          <li><a href="termos-de-uso.html">Termos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <h2>Contato</h2>
-    <p>Dúvidas ou suporte: <strong>ericacbonadio@gmail.com</strong></p>
+  <main class="container">
+    <section class="hero">
+      <span class="badge">Desenvolvedora independente</span>
+      <h1>EBDev</h1>
+      <p class="lead">
+        Sou Erica Bonadio, desenvolvedora iniciante criando ferramentas móveis
+        focadas em utilidade prática — especialmente para quem trabalha na atenção
+        básica à saúde.
+      </p>
+    </section>
+
+    <article class="card">
+      <h2>ACS Visita</h2>
+      <p>
+        App Android de apoio operacional para o Agente Comunitário de Saúde (ACS).
+        Ajuda no registro de visitas domiciliares, organização de moradores,
+        indicadores de trabalho e exportações — tudo armazenado localmente no celular.
+      </p>
+      <ul>
+        <li>Não substitui o e-SUS PEC nem sistemas oficiais da Secretaria de Saúde</li>
+        <li>Dados ficam no dispositivo; sem envio automático para servidores</li>
+        <li>Backups criptografados (.acs) sob responsabilidade do usuário</li>
+      </ul>
+      <a class="btn" href="acs-visita.html">Saiba mais sobre o app</a>
+    </article>
+
+    <article class="card">
+      <h2>Documentos legais</h2>
+      <p>Necessários para publicação na Google Play Store e transparência com usuários:</p>
+      <ul>
+        <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Contato</h2>
+      <p>
+        Dúvidas, suporte ou solicitações sobre privacidade:<br>
+        <a href="mailto:contato@mgbstudio.com.br">contato@mgbstudio.com.br</a>
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> EBDev · Erica Bonadio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

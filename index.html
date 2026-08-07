@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="EBDev — desenvolvimento de software. ACS Visita e Lemon: apps para saúde e gestão comercial.">
+  <meta name="description" content="EBDev — Erica Bonadio. Sistemas digitais para saúde pública e gestão de negócios. ACS Visita e Lemon.">
   <title>EBDev | Desenvolvimento de Software</title>
   <link rel="icon" href="assets/logo-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
@@ -11,91 +11,144 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="logo-link">
-        <img class="logo-full" src="assets/logo.png" alt="EBDev — Desenvolvimento de Software" height="44">
-        <img class="logo-icon" src="assets/logo-icon.svg" alt="EBDev" width="40" height="40">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="" height="36">
+        <span class="brand-word">EBDEV</span>
       </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="acs-visita/">ACS Visita</a></li>
-          <li><a href="lemon/">Lemon</a></li>
-        </ul>
-      </nav>
+      <a class="contact-exec" href="mailto:ericacbonadio@gmail.com">contato.exec()</a>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <span class="badge">Desenvolvedora independente</span>
-      <h1 class="sr-only">EBDev — Desenvolvimento de Software</h1>
-      <img class="hero-logo" src="assets/logo.png" alt="EBDev — Desenvolvimento de Software">
-      <p class="lead">
-        Sou Erica Bonadio, desenvolvedora criando ferramentas digitais
-        focadas em utilidade prática — de apps móveis na saúde pública
-        a sistemas web para gestão de negócios.
-      </p>
+  <main class="container home">
+    <section class="hero-grid" aria-label="Apresentação">
+      <article class="panel hero-main">
+        <span class="status-pill">Disponível para projetos</span>
+        <h1 class="hero-title">Erica Bonadio.</h1>
+        <p class="hero-subtitle">Sistemas que resolvem o mundo real.</p>
+        <p class="hero-lead">
+          Desenvolvedora independente criando ferramentas digitais focadas em
+          utilidade prática — de apps móveis na saúde pública a sistemas web
+          para gestão de negócios.
+        </p>
+      </article>
+
+      <aside class="panel stack-panel">
+        <div class="stack-head">
+          <h2>Stack principal</h2>
+          <span class="stack-ver">v1.0</span>
+        </div>
+        <ul class="stack-list">
+          <li class="stack-item">
+            <span>Android / Kotlin · Expo</span>
+            <em>mobile</em>
+          </li>
+          <li class="stack-item">
+            <span>Next.js / PostgreSQL</span>
+            <em>web</em>
+          </li>
+          <li class="stack-item">
+            <span>Dados locais / Offline</span>
+            <em>privacy</em>
+          </li>
+        </ul>
+        <div class="stack-visual" aria-hidden="true"></div>
+      </aside>
     </section>
 
-    <h2 class="section-title">Nossos apps</h2>
-    <div class="projects-grid">
-    <article class="card">
-      <h2>ACS Visita</h2>
-      <p>
-        App Android de apoio operacional para o Agente Comunitário de Saúde (ACS).
-        Ajuda no registro de visitas domiciliares, organização de moradores,
-        indicadores de trabalho e exportações — tudo armazenado localmente no celular.
-      </p>
-      <ul>
-        <li>Não substitui o e-SUS PEC nem sistemas oficiais da Secretaria de Saúde</li>
-        <li>Dados ficam no dispositivo; sem envio automático para servidores</li>
-        <li>Backups criptografados (.acs) sob responsabilidade do usuário</li>
-      </ul>
-      <a class="btn" href="acs-visita/">Saiba mais</a>
-    </article>
+    <section class="projects-grid" aria-label="Apps">
+      <article class="panel project-card" id="acs-visita">
+        <div class="project-top">
+          <div class="project-icon project-icon--acs" aria-hidden="true">✚</div>
+          <div>
+            <h2>ACS Visita</h2>
+            <p class="project-meta project-meta--acs">Mobile / Agentes de Saúde</p>
+          </div>
+        </div>
+        <p>
+          App Android de apoio ao Agente Comunitário de Saúde: registro de visitas
+          domiciliares, organização de moradores e indicadores — tudo no dispositivo,
+          com backups criptografados e funcionamento 100% offline.
+        </p>
+        <div class="project-stats">
+          <span class="stat-chip">100% OFFLINE</span>
+          <span class="stat-chip">0 SERVIDORES</span>
+        </div>
+        <div class="project-media" aria-hidden="true">
+          <div class="phones">
+            <div class="phone"><div class="phone-dots"><span></span><span></span><span></span><span></span></div></div>
+            <div class="phone"><div class="phone-dots"><span></span><span></span><span></span><span></span></div></div>
+          </div>
+        </div>
+        <a class="btn btn-primary" href="acs-visita/">Saiba mais →</a>
+      </article>
 
-    <article class="card card--lemon" id="lemon">
-      <h2>Lemon <span class="card-emoji" aria-hidden="true">🍋</span></h2>
-      <p>
-        Web app para vendas e estoque de limões em caixas. Produtos, lotes por colheita,
-        clientes, vendas por porte (pequeno / médio / grande) e relatórios para a equipe.
-      </p>
-      <ul>
-        <li>Perfis: administrador, vendedor, contadora e comprador</li>
-        <li>Dashboard com estoque, faturamento e alertas</li>
-        <li>Next.js + PostgreSQL, hospedado na nuvem</li>
-      </ul>
-      <a class="btn btn--lemon" href="lemon/">Saiba mais</a>
-    </article>
-    </div>
+      <article class="panel project-card" id="lemon">
+        <div class="project-top">
+          <div class="project-icon project-icon--lemon" aria-hidden="true">▣</div>
+          <div>
+            <h2>Lemon</h2>
+            <p class="project-meta project-meta--lemon">Web / Vendas &amp; Estoque</p>
+          </div>
+        </div>
+        <p>
+          Web app de vendas e estoque de limões em caixas: produtos, lotes por colheita,
+          clientes, vendas por porte e relatórios para a equipe.
+        </p>
+        <div class="project-media lemon-widgets" aria-hidden="true">
+          <div class="widget">
+            <strong>Estoque</strong>
+            <div class="bar"><i></i></div>
+          </div>
+          <div class="widget">
+            <strong>Perfis de acesso</strong>
+            <div class="widget-value">4 perfis</div>
+          </div>
+          <div class="widget">
+            <strong>Vendas por porte</strong>
+            <div class="mini-bars">
+              <span data-label="P"></span>
+              <span data-label="M"></span>
+              <span data-label="G"></span>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-lemon" href="lemon/">Saiba mais →</a>
+      </article>
+    </section>
 
-    <article class="card">
-      <h2>Documentos legais</h2>
-      <p>Políticas e termos separados por aplicativo:</p>
+    <section class="bottom-grid" aria-label="Contato e documentos">
+      <article class="panel legal-panel">
+        <p class="section-label">Documentos legais</p>
 
-      <h3 class="legal-app-title">ACS Visita</h3>
-      <ul>
-        <li><a href="acs-visita/politica-privacidade.html">Política de Privacidade</a></li>
-        <li><a href="acs-visita/termos-de-uso.html">Termos de Uso</a></li>
-      </ul>
+        <div class="legal-block legal-block--acs">
+          <h3>ACS Visita</h3>
+          <p><a href="acs-visita/politica-privacidade.html">Política de Privacidade ↗</a></p>
+          <p><a href="acs-visita/termos-de-uso.html">Termos de Uso ↗</a></p>
+        </div>
 
-      <h3 class="legal-app-title">Lemon</h3>
-      <ul>
-        <li><a href="lemon/politica-privacidade.html">Política de Privacidade</a></li>
-      </ul>
-    </article>
+        <div class="legal-block legal-block--lemon">
+          <h3>Lemon</h3>
+          <p><a href="lemon/politica-privacidade.html">Política de Privacidade ↗</a></p>
+        </div>
+      </article>
 
-    <article class="card">
-      <h2>Contato</h2>
-      <p>
-        Dúvidas, suporte ou solicitações sobre privacidade:<br>
-        <a href="mailto:ericacbonadio@gmail.com">ericacbonadio@gmail.com</a>
-      </p>
-    </article>
+      <article class="panel cta-panel">
+        <h2>Pronto para o próximo nível?</h2>
+        <p>Dúvidas, suporte ou solicitações sobre privacidade.</p>
+        <p>
+          <a class="btn btn-primary" href="mailto:ericacbonadio@gmail.com">Enviar e-mail →</a>
+        </p>
+      </article>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> EBDev · Erica Bonadio</p>
+    <div class="container footer-row">
+      <p>© <span id="year"></span> EBDEV — SOFTWARE INDEPENDENTE</p>
+      <p class="footer-meta">
+        <span>LOCAL: BRASIL</span>
+        <span>BUILD: FINAL</span>
+      </p>
     </div>
   </footer>
 

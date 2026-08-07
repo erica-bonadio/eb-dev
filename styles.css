@@ -329,6 +329,15 @@ ul {
   gap: 0.85rem;
 }
 
+.project-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.25);
+}
+
 .project-icon {
   width: 44px;
   height: 44px;
@@ -677,6 +686,30 @@ ul {
 /* Inner / legal pages (ACS, Lemon) */
 .legal-page {
   padding: 2rem 0 3rem;
+}
+
+.app-page-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.app-page-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px var(--border-strong);
+}
+
+.app-page-head .badge {
+  margin-bottom: 0.45rem;
+}
+
+.app-page-head .updated {
+  margin-bottom: 0;
 }
 
 .legal-page h1 {
